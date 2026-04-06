@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>child of god deluxe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="experience" aria-live="polite">
+      <section class="hover-video-wrap" aria-label="Visuel animé">
+        <div
+          id="hoverVideoZone"
+          class="hover-video-frame"
+          tabindex="0"
+          aria-label="Zone vidéo animée"
+        >
+          <video
+            id="hoverVideo"
+            class="hover-video"
+            preload="auto"
+            muted
+            loop
+            playsinline
+            aria-hidden="true"
+          >
+            <source src="./assets/video/Mt_Etna_and_Catania1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
+      <button
+        id="coverTrigger"
+        class="cover-trigger"
+        type="button"
+        aria-label="Révéler la tracklist deluxe"
+      >
+        <article class="cover-art" role="img" aria-label="cover child of god deluxe">
+          <div class="cover-canvas" aria-hidden="true">
+            <div class="cover-bg"></div>
+            <div class="tracklist-overlay" aria-hidden="true">
+              <p>15 . child of god</p>
+              <p>16. cry</p>
+              <p>17. liqueur feat zélia</p>
+              <p>18. volcano</p>
+              <p>19. fangirl</p>
+              <p>20. douleur feat bloodyneon</p>
+              <p>21. light off</p>
+            </div>
+          </div>
+        </article>
+      </button>
+
+      <section class="countdown-wrap" aria-label="Compte à rebours">
+        <p id="countdownValue" class="countdown-value">00 : 00 : 00 : 00</p>
+        <img
+          class="countdown-extra"
+          src="./assets/extra/countdown-below-transparent.png"
+          alt="Visuel child of god deluxe"
+          loading="lazy"
+        />
+      </section>
+
+      <audio id="teaserAudio" preload="auto" loop>
+        <source src="./assets/audio/cog-audio-teasing.mp3" type="audio/mpeg" />
+      </audio>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
